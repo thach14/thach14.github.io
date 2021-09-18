@@ -22,10 +22,9 @@
 				} else {
 					str = "<table border=2><tr><th>Number</th><th>Square</th><th>Cube</th></tr>";
 					for ( i = numberFirst; i <= numberSecond; i++) {
-						tr = str + "<tr><td>" + i + "<td>" + (i * i) + "<td>" + (i * i * i);
-						$("#tao_bang").append(tr);
-		
+						str = str + "<tr><td>" + i + "<td>" + (i * i) + "<td>" + (i * i * i);
 				}
+				$("#tao_bang").append(str);
 			}
 		}
 	)

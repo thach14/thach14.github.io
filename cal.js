@@ -3,7 +3,10 @@ if (d == 'c') {
 document.getElementById('res').value = "";
 return;
 }
+
 res = document.getElementById('res').value;
+
+
 if (res == 0 && d == 0)
 return;
 if (d == '+' || d == '-' || d == '*' || d == '/') {
