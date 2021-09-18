@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>	
+
+
+<body>
+	<p>Nhập số đầu tiên: <input type="number"  id="number-first" value="0" /></p>
+	<p>Nhập số cuối cùng: <input type="number"  id="number-second" value="0" /></p>
+	<button id="btn_tinh"> Tính</button>
+    <p id="ket-qua">Kết quả:</p>
+	<div id="tao_bang"></div>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#btn_tinh").click(function(){
+				var numberFirst = parseInt($("#number-first").val());
+				var numberSecond = parseInt($("#number-second").val());
+				if (numberFirst>numberSecond) {
+						$("#ket-qua").text("invalid range");
+				} else {
+					str = "<table border=2><tr><th>Number</th><th>Square</th><th>Cube</th></tr>";
+					for ( i = numberFirst; i <= numberSecond; i++) {
+						tr = str + "<tr><td>" + i + "<td>" + (i * i) + "<td>" + (i * i * i);
+						$("#tao_bang").append(tr);
+		
+				}
+			}
+		}
+	)
+	});
+	</script>
+</body>
+</html>
