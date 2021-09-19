@@ -7,6 +7,9 @@ html, body{
 	font-family: 'Poppins', sans-serif;
 	color: #222;
 }
+.card-imd-top{
+	width: 70%;
+}
 .navbar{
 	padding: .8rem;
 
@@ -23,7 +26,7 @@ html, body{
 }
 .carousel-caption{
 	padding: absolute;
-	top:  50%;
+	top: 50%;
 	transform: translateY(10px);
 }
 .carousel-caption h1 {
@@ -40,14 +43,14 @@ html, body{
 }
 .btn-primary{
 	background-color: #6648b1;
-	border:  1px solid #6648b1;
+	border: 1px solid #6648b1;
 }
 .btn-primary:hover{
 	background-color: #563d7c;
-	border:  1px solid #563d7c;
+	border: 1px solid #563d7c;
 }
 .jumbotron{
-	padding:  1rem;
+	padding: 1rem;
 	border-radius: 0;
 }
 .padding{
@@ -72,7 +75,7 @@ html, body{
 
 }
 .social a{
-	font-size: 4.5 rem;
+	font-size: 4.5rem;
 	padding:  3rem;
 
 }
