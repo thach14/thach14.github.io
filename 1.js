@@ -11,6 +11,8 @@ if (first > second) {
 alert("invalid range ");
 return;
 }
+
+//tao bang trong html
 str = "<table border=2><tr><th>Number</th><th>Square</th><th>Cube</th></tr>";
 for (i = first; i <= second; i++) {
 str = str + "<tr><td>" + i + "<td>" + (i * i) + "<td>" + (i * i * i);

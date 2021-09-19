@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-
+	<title>Đặng Ngọc Thạch (1812843)</title>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <style>
 #main{
@@ -14,174 +14,192 @@ border:1px solid blue;
 </head>
 <body>
 <div id="main">
-<table style="width:100%; " border="1">
-<tr>
-<td colspan=4><input style="width:97%" type="text" id="res" size=16 onfocus="this.blur();"></td>
-</tr>
-<tr>
-<td style="text-align:center"><input type="button" id="b0" value=0 size=2 ></td>
-<td style="text-align:center"><input type="button" id="b1" value=1 size=2 ></td>
-<td style="text-align:center"><input type="button" id="b2" value=2 size=2 ></td>
-<td style="text-align:center"><input type="button" id="b+" value=+ size=2 ></td>
-</tr>
-<tr>
-<td style="text-align:center"><input type="button" id="b3" value=3 size=2 ></td>
-<td style="text-align:center"><input type="button" id="b4" value=4 size=2 ></td>
-<td style="text-align:center"><input type="button" id="b5" value=5 size=2 ></td>
-<td style="text-align:center"><input type="button" id="b-" value=- size=2 ></td>
-</tr>
-<tr>
-<td style="text-align:center"><input type="button" id="b6"  value=6 size=2 ></td>
-<td style="text-align:center"><input type="button" id="b7" value=7 size=2 ></td>
-<td style="text-align:center"><input type="button" id="b8" value=8 size=2 ></td>
-<td style="text-align:center"><input type="button" id="b*" value=* size=2 ></td>
-</tr>
-<tr>
-<td style="text-align:center"><input type="button" id="b9" value=9 size=2 ></td>
-<td style="text-align:center"><input type="button" id="b--" value=+/- size=2 ></td>
-<td style="text-align:center"><input type="button" id="bc" value='C' size=2 ></td>
-<td style="text-align:center"><input type="button" id="chia" value='/' size=2 ></td>
-</tr>
-<tr>
-<td colspan=4 style="text-align:center"><input style="width:50%" type="button" id="bang" value="="></td>
-</tr>
-</table>
-</div>
+        <table style="width:100%; " border="1px">
+            <tr>
+                <td colspan=4><input style="width:97%" type=text id=res size=16 onfocus="this.blur();"></td>
+            </tr>
+            <tr>
+                <td style="text-align:center"><input type="button" class="so" id="b1" value=0 size=2 ></td>
+                <td style="text-align:center"><input type="button" class="so" id="b2" value=1 size=2 ></td>
+                <td style="text-align:center"><input type="button" class="so" id="b3" value=2 size=2 ></td>
+                <td style="text-align:center"><input type="button" id="b4" value=+ size=2 ></td>
+            </tr>
+            <tr>
+                <td style="text-align:center"><input type="button" class="so" id="b5" value=3 size=2 ></td>
+                <td style="text-align:center"><input type="button" class="so" id="b6" value=4 size=2 ></td>
+                <td style="text-align:center"><input type="button" class="so" id="b7" value=5 size=2 ></td>
+                <td style="text-align:center"><input type="button" id="b8" value=- size=2 ></td>
+            </tr>
+            <tr>
+                <td style="text-align:center"><input type="button" class="so" id="b9" value=6 size=2 ></td>
+                <td style="text-align:center"><input type="button" class="so" id="b10" value=7 size=2 ></td>
+                <td style="text-align:center"><input type="button" class="so" id="b11" value=8 size=2 ></td>
+                <td style="text-align:center"><input type="button" id="b12" value=* size=2 ></td>
+            </tr>
+            <tr>
+                <td style="text-align:center"><input type="button" class="so" id="b13" value=9 size=2 ></td>
+                <td style="text-align:center"><input type="button" id="b14" value=+/- size=2 ></td>
+                <td style="text-align:center"><input type="button" id="b15" value='C' size=2 ></td>
+                <td style="text-align:center"><input type="button" id="b16" value='/' size=2 ></td>
+                </tr>
+            <tr>
+            <td colspan=4 style="text-align:center">
+                <input style="width:50%" type="button" id = "dau_bang" value="="></td>
+            </tr>
+        </table>
+    </div>
 <!----------------------------------------------------------->
 <script type="text/javascript">
+
+	// nhap so cho phep tinh
+	res = $("#res").val();
 	$(document).ready(function(){
 		$("#b1").click(function(){
-			$("#res").text +="1";
+			res += "0";
+			$("#res").val(res);			
 		});
 	});
 	$(document).ready(function(){
 		$("#b2").click(function(){
-			$("#res").text +=2;
+			res += "1";
+			$("#res").val(res);			
 		});
 	});
 	$(document).ready(function(){
 		$("#b3").click(function(){
-			$("#res").text +=3;
-		});
-	});
-	$(document).ready(function(){
-		$("#b4").click(function(){
-			$("#res").text +=4;
+			res += "2";
+			$("#res").val(res);			
 		});
 	});
 	$(document).ready(function(){
 		$("#b5").click(function(){
-			$("#res").text +=5;
+			res += "3";
+			$("#res").val(res);			
 		});
 	});
 	$(document).ready(function(){
 		$("#b6").click(function(){
-			$("#res").text +=6;
+			res += "4";
+			$("#res").val(res);			
 		});
 	});
 	$(document).ready(function(){
 		$("#b7").click(function(){
-			$("#res").text +=7;
-		});
-	});
-	$(document).ready(function(){
-		$("#b8").click(function(){
-			$("#res").text +=8;
+			res += "5";
+			$("#res").val(res);			
 		});
 	});
 	$(document).ready(function(){
 		$("#b9").click(function(){
-			$("#res").text +=9;
+			res += "6";
+			$("#res").val(res);			
 		});
 	});
-	// nut xoa "c"--------------------------------------------
 	$(document).ready(function(){
-		$("#bc").click(function(){
-			$("#res").text = "";
-			return;
+		$("#b10").click(function(){
+			res += "7";
+			$("#res").val(res);			
 		});
 	});
-/*---------------------------------------------------------*/
-// khi res dang = 0 va nhan them so 0
-	
-
-	res = $("#res").val();
-	
-
 	$(document).ready(function(){
-		$("#b0").click(function(){
-			if (res==0){return;}
+		$("#b11").click(function(){
+			res += "8";
+			$("#res").val(res);			
 		});
 	});
-/*---------------------------------------------------------*/
-	var pheptinh;
+	$(document).ready(function(){
+		$("#b13").click(function(){
+			res += "9";
+			$("#res").val(res);			
+		});
+	});
+////////////////////////////////////////////////////////////////////////////
+// dung bien phepTinh se lay phep tinh bieu thu
+// luu gia tri dau tien vao num1
 	var num1;
-	var num2;
-	var ans;
+	var phepTinh;
 	$(document).ready(function(){
-		$("#b+").click(function(){
-			pheptinh = "+"; // danh dau phep tinh cong
-			num1 = parseFloat($("#res").val());
-			$("#res").text = "+";
-			return;
+		$("#b4").click(function(){
+			num1 = parseFloat(res);
+			phepTinh="cong";
+			res = "";
+			$("#res").val("+");
+			console.log(res);
+			return;			
 		});
 	});
 	$(document).ready(function(){
-		$("#b-").click(function(){
-			pheptinh = "-"; // danh dau phep tinh tru
-			num1 = parseFloat($("#res").val());
-			$("#res").text = "-";
-			return;
+		$("#b8").click(function(){
+			num1 = parseFloat(res);
+			phepTinh="tru";
+			res = "";
+			$("#res").val("-");		
+			console.log(phepTinh);	
 		});
 	});
 	$(document).ready(function(){
-		$("#b*").click(function(){
-			pheptinh = "*"; // danh dau phep tinh nhan
-			num1 = parseFloat($("#res").val());
-			$("#res").text = "*";
-			return;
+		$("#b12").click(function(){
+			num1 = parseFloat(res);
+			phepTinh="nhan";
+			res = "";
+			$("#res").val("*");	
+			console.log(phepTinh);		
 		});
 	});
 	$(document).ready(function(){
-		$("#chia").click(function(){
-			pheptinh = "/"; // danh dau phep tinh chia
-			num1 = parseFloat($("#res").val());
-			$("#res").text = "/";
-			return;
+		$("#b16").click(function(){
+			num1 = parseFloat(res);
+			phepTinh="chia";
+			res = "";
+			$("#res").val("/");	
+			console.log(phepTinh);		
+		});
+	});
+////////////////////////////////////////////////////////////////////
+// xu ly khi bam dau bang gom cac truong hop cong tru nhan chia
+	$(document).ready(function(){
+		$("#dau_bang").click(function(){
+			if (phepTinh=="cong"){
+				var ans = num1 + parseFloat($("#res").val());
+				$("#res").val(ans);
+			}		
+		});
+	});
+	$(document).ready(function(){
+		$("#dau_bang").click(function(){
+			if (phepTinh=="tru"){
+				var ans = num1 - parseFloat($("#res").val());
+				$("#res").val(ans);
+			}		
+		});
+	});
+	$(document).ready(function(){
+		$("#dau_bang").click(function(){
+			if (phepTinh=="nhan"){
+				var ans = num1 * parseFloat($("#res").val());
+				$("#res").val(ans);
+			}		
+		});
+	});
+	$(document).ready(function(){
+		$("#dau_bang").click(function(){
+			if (phepTinh=="chia"){
+				var ans = num1 / parseFloat($("#res").val());
+				$("#res").val(ans);
+			}		
+		});
+	});
+/////////////////////////////////////////////////////////////
+// reset lai chuong trinh khi bam C
+	$(document).ready(function(){
+		$("#b15").click(function(){
+			
+				$("#res").val("");
+				res = "";
+			
 		});
 	});
 
-	/*---------------------------------------------------------*/
-	$(document).ready(function(){
-		$("#bang").click(function(){
-			num2 = parseFloat($("#res").val());
-			if (pheptinh=="+") {
-				ans = num1 + num2;
-				$("#res").text() = ans;
-				return;
-			} else if (pheptinh=="-") {
-				ans = num1 - num2;
-				$("#res").text() = ans;
-				return;
-			} else if (pheptinh=="*") {
-				ans = num1 * num2;
-				$("#res").text() = ans;
-				return;
-			} else if (pheptinh=="/") {
-				ans = parseInt(num1 / num2);
-				$("#res").text() = ans;
-				return;
-			}
-		});
-	});
-	/*---------------------------------------------------------*/
-	$(document).ready(function(){
-		$("#b--").click(function(){
-			$("#res").text *=-1;
-		});
-	});
-	/*---------------------------------------------------------*/
-	
 
 </script>
 </body>
