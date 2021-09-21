@@ -8,6 +8,11 @@ html, body{
 	color: #FFFFFF;
 	background-color: #151515;
 }
+.text {
+  color: white;
+  font-size: 16px;
+  padding: auto;
+}
 .card-imd-top{
 	width: 70%;
 }
@@ -160,8 +165,14 @@ footer a {
 		font-size: 2.5em;
 		padding:  1.2rem;
 	}
+.text{
+	font-size: 5px;
+}
 }
 @media (max-width: 576px){
+.text{
+	font-size: 7px;
+}
 .carousel-caption{
 	top: 40%;
 }
@@ -246,9 +257,4 @@ figure{
 }
 .card:hover img {
   opacity: 0.3;
-}
-.text {
-  color: white;
-  font-size: 16px;
-  padding: auto;
 }
